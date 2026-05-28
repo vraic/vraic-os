@@ -1,6 +1,6 @@
 <div class="container space-y-4">
   <h1>Dashboard</h1>
   <%= link_to "Home", root_path %>
-  <p>Welcome, <%= Current.user.email_address %>!</p>
+  <p>Welcome, <%= Current.user.email_address %>! (user type: <%= Current.user.user_type %>)</p>
   <%= button_to "Logout", session_path, method: :delete %>
 </div>
