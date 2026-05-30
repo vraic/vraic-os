@@ -4,6 +4,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
     @administrator = users(:administrator)
     @user = users(:one)
+
     sign_in_as(@administrator)
   end
 
